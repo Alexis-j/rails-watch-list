@@ -1,0 +1,12 @@
+<header>
+    <h1>WatchList Creator</h1>
+    
+</header>
+<main>
+  <h2>Movie Lists</h2>
+  <ul class="card">
+    <% @lists.each do |list| %>
+    <%= link_to list.name, list_path(list)%>
+    <%end%>
+  </ul>
+</main>
