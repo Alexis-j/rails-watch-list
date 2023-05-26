@@ -1,5 +1,10 @@
-<h3>Create a new list</h3>
-  <%= simple_form_for @list do |f| %>
-  <%= f.input :name, placeholder: 'type a name for your list' %>
-  <%= f.submit class: 'btn-flat' %>
-<% end %>
+<div class="container py-5">
+  <div class="col-12 col-md-6 offset-lg-3">
+    <div class="bg-white rounded p-3 shadow"><h3>Create a new list</h3>
+      <%= simple_form_for @list do |f| %>
+      <%= f.input :name, placeholder: 'type a name for your list' %>
+      <%= f.submit class: 'btn-flat' %>
+      <% end %>
+    </div>
+  </div>
+</div>

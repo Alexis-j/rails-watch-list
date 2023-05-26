@@ -11,6 +11,22 @@
   </head>
 
   <body>
+    <header>
+    <div class=".bg-secondary.bg-gradient">
+      <div class="d-flex shadow justify-content-between">
+        <div class="p-2 btn btn-flat">
+          <h1>🍿</h1>
+        </div>
+          <div>
+                <div class="b-5">
+                  <%= link_to 'New list', new_list_path(), class:"btn p-4"%>
+                  <%= link_to 'My Lists', lists_path(),class:"btn p-4"%>
+                </div>
+          </div>
+      </div>
+    </div>
+
+    </header>
     <%= yield %>
   </body>
 </html>
